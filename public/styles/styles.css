@@ -1,0 +1,16 @@
+* {
+  font-family: "JetBrains", sans-serif;
+}
+
+.main-container {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.main-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.815rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
