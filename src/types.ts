@@ -1,5 +1,5 @@
 export type Cell = {
-  countNeighbours: number;
+  neighboursCount: number;
   hasMine: boolean;
 };
 
