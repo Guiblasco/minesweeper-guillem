@@ -1,16 +1,18 @@
 * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
   font-family: "JetBrains", sans-serif;
 }
 
 .main-container {
-  margin: 0 auto;
   padding: 15px;
+  border-bottom: 3px solid #808080;
 }
 
 .main-title {
-  margin: 0 auto;
   text-align: center;
   font-size: 3.815rem;
   text-transform: uppercase;
-  text-decoration: underline;
 }
