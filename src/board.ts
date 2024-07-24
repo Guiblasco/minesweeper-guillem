@@ -1,7 +1,18 @@
-import { Cell, Board } from "./types.js";
+import { Board } from "./types";
 
-const createBoard = (rows: number, columns: number): void => {
-  for (let colum = 0; colum <= columns; colum++) {
-    for (let row = 0; row <= rows; row++) {}
+const createSquareBoard = (dimension: number): Board => {
+  const squareBoard: Board = {
+    cells: [],
+  };
+
+  for (let column = 0; column < dimension; column++) {
+    squareBoard.cells.push([]);
+    for (let row = 0; row < dimension; row++) {
+      squareBoard.cells[column].push({ hasMine: false, countNeighbours: 0 });
+    }
   }
+
+  return squareBoard;
 };
+
+console.log(createSquareBoard(6));
