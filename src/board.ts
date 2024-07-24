@@ -8,7 +8,7 @@ const createSquareBoard = (dimension: number): Board => {
   for (let column = 0; column < dimension; column++) {
     squareBoard.cells.push([]);
     for (let row = 0; row < dimension; row++) {
-      squareBoard.cells[column].push({ hasMine: false, countNeighbours: 0 });
+      squareBoard.cells[column].push({ hasMine: false, neighboursCount: 0 });
     }
   }
 
