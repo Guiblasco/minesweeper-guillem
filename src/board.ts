@@ -1,7 +1,6 @@
 import { Board } from "./types";
 
 const createSquareBoard = (dimension: number): Board => {
-  const randomNumber: number = Math.random() * 10;
   const squareBoard: Board = {
     cells: [],
   };
