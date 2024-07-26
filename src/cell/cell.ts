@@ -1,4 +1,4 @@
-import { getRandomBoolean } from "../utils/utils.js";
+import { getRandomBoolean } from "../utils/utils";
 import { Cell } from "./types";
 
 export const createCell = (): Cell => {
