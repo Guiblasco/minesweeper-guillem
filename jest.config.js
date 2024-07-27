@@ -4,5 +4,6 @@ export default {
   transform: {
     "^.+.tsx?$": ["ts-jest", {}],
   },
+  resolver: "jest-ts-webcompat-resolver",
   rootDir: "src",
 };

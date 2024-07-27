@@ -1,5 +1,5 @@
 import { Board } from "./types";
-import { createCell } from "../cell/cell.js";
+import { createCell } from "../cell/cell";
 
 const createSquareBoard = (dimension: number): Board => {
   const squareBoard: Board = {
@@ -15,5 +15,3 @@ const createSquareBoard = (dimension: number): Board => {
 
   return squareBoard;
 };
-
-createSquareBoard(5);
