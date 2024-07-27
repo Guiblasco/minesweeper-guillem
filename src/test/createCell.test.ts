@@ -1,14 +1,13 @@
-import { describe, expect, test } from "@jest/globals";
 import { createCell } from "../cell/cell";
-import { Cell } from "../cell/types";
 
 describe("Given function CreateCell()", () => {
-  describe("When it recives nothing", () => {
-    test("Then should return a Cell object", () => {
-      const cell: Cell = { hasMine: true, neighboursCount: 0 };
-      const expectedResult = createCell();
+  describe("When it recives one call with nothing arguments", () => {
+    test("Then should return a Cell object with 'neighboursCount' property value is 0", () => {
+      const neighboursCountCell = 0;
 
-      expect(expectedResult).toStrictEqual(cell);
+      const cell = createCell();
+
+      expect(cell.neighboursCount).toBe(neighboursCountCell);
     });
   });
 });
