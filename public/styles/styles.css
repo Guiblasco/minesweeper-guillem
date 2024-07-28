@@ -6,13 +6,38 @@ body {
   font-family: "JetBrains", sans-serif;
 }
 
-.main-container {
-  padding: 15px;
-  border-bottom: 3px solid #808080;
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f00;
 }
 
-.main-title {
+.main-container {
+  padding: 15px;
+}
+
+.main-container__header__main-title {
   text-align: center;
   font-size: 3.815rem;
   text-transform: uppercase;
+}
+
+.main-container__header {
+  border-bottom: 3px solid #808080;
+}
+
+.main-container__grid-container__grid {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #444;
+}
+
+.main-container__grid-container {
+  display: flex;
+  justify-content: center;
 }
