@@ -1,7 +1,7 @@
 import { Board } from "./types";
-import { createCell, getMinesCount } from "../cell/cell.js";
+import { createCell, getNeighboursMinesCount } from "../cell/cell.js";
 
-const createSquareBoard = (dimension: number): Board => {
+export const createSquareBoard = (dimension: number): Board => {
   const squareBoard: Board = {
     cells: [],
   };
@@ -20,7 +20,7 @@ const board = createSquareBoard(8);
 
 board.cells.forEach((cells, columnCellPosition) => {
   cells.forEach((cell, rowCellPosition) => {
-    cell.neighboursMinesCount = getMinesCount(
+    cell.neighboursMinesCount = getNeighboursMinesCount(
       board,
       columnCellPosition,
       rowCellPosition

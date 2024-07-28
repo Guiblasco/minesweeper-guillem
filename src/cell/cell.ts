@@ -11,7 +11,7 @@ export const createCell = (): Cell => {
   return cell;
 };
 
-export const getMinesCount = (
+export const getNeighboursMinesCount = (
   board: Board,
   cellPositionColumn: number,
   cellPositionRow: number
